@@ -1,0 +1,111 @@
+{
+  "Hero": {
+    "title": "Cursos de Preparação para Exames",
+    "subtitle": "Os exames são momentos de avaliação decisivos no percurso académico e, por isso, estes devem ser preparados da melhor maneira possivel.",
+    "img": "hero_courses.jpg",
+    "singleButton": true,
+    "firstButton": "Inscreva-se!",
+    "href": "/contactos"
+  },
+  "Courses": {
+    "online": [
+      {
+        "icon": "icon_course_fq.svg",
+        "title": "FISICA-QUÍMICA 11ºANO-ONLINE",
+        "hasAnualCourse": false,
+        "pdfShort": "https://asdesaberpt-my.sharepoint.com/:b:/g/personal/geral_asdesaber_pt1/EZ3bxHGoqk1Isc5vPZBNRw8BnsqMsLh5ARy11i_w0L0lHg?e=gkX0Bj",
+        "pdfLong": ""
+      },
+      {
+        "icon": "icon_course_bg.svg",
+        "title": "BIOLOGIA-GEOLOGIA 11ºANO-ONLINE",
+        "hasAnualCourse": false,
+        "pdfShort": "https://asdesaberpt-my.sharepoint.com/:b:/g/personal/geral_asdesaber_pt1/EWRjfo0xH1pLvixaJI3lO7gB_j3xfe8vBZ1FbKGjCAGuAA?e=a8HUnB",
+        "pdfLong": ""
+      },
+      {
+        "icon": "icon_course_gd.svg",
+        "title": "GEOMETRIA DESCRITIVA 11ºANO-ONLINE",
+        "hasAnualCourse": false,
+        "pdfShort": "",
+        "pdfLong": ""
+      },
+      {
+        "icon": "icon_course_e.svg",
+        "title": "ECONOMIA 11ºANO-ONLINE",
+        "hasAnualCourse": false,
+        "pdfShort": "https://asdesaberpt-my.sharepoint.com/:b:/g/personal/geral_asdesaber_pt1/EQ82ZDnk-yxBltTTZYrUQLABdLQHCG4EXTxLF3h1tsi8Zg?e=8jEeDf",
+        "pdfLong": ""
+      },
+      {
+        "icon": "icon_course_g_white.svg",
+        "title": "GEOGRAFIA 11ºANO-ONLINE",
+        "hasAnualCourse": false,
+        "pdfShort": "",
+        "pdfLong": ""
+      },
+      {
+        "icon": "icon_course_pt_black.svg",
+        "title": "PORTUGUÊS 12ºANO-ONLINE",
+        "hasAnualCourse": true,
+        "pdfAnual": "",
+        "pdfShort": "https://asdesaberpt-my.sharepoint.com/:b:/g/personal/geral_asdesaber_pt1/EYrs7xlqtAlGiJ3gV--1z5YBdG-vOa8krWnmss7k_GFKZA?e=tjC8H1",
+        "pdfLong": ""
+      },
+      {
+        "icon": "icon_course_m_white.svg",
+        "title": "MATEMÁTICA 12ºANO-ONLINE",
+        "hasAnualCourse": true,
+        "pdfAnual": "",
+        "pdfShort": "https://asdesaberpt-my.sharepoint.com/:b:/g/personal/geral_asdesaber_pt1/ES1shXQBzAJBj9VMHRZhEwkBbkagv2FModD_gbDv-p7lNQ?e=Lr1DgM",
+        "pdfLong": "https://asdesaberpt-my.sharepoint.com/:b:/g/personal/geral_asdesaber_pt1/EVN334-R8bxLtLQTYQ4fyDcB9OPRhiMcaMTzvBoLlVBIBg?e=ZP2MGm"
+      }
+    ],
+    "inPerson": [
+      {
+        "icon": "icon_course_fq.svg",
+        "title": "FISICA-QUÍMICA 11ºANO-presencial",
+        "hasAnualCourse": false,
+        "pdfShort": "",
+        "pdfLong": ""
+      },
+      {
+        "icon": "icon_course_bg.svg",
+        "title": "BIOLOGIA-GEOLOGIA 11ºANO-presencial",
+        "hasAnualCourse": false,
+        "pdfShort": "",
+        "pdfLong": ""
+      },
+      {
+        "icon": "icon_course_gd.svg",
+        "title": "GEOMETRIA DESCRITIVA 11ºANO-presencial",
+        "hasAnualCourse": false,
+        "pdfShort": "https://asdesaberpt-my.sharepoint.com/:b:/g/personal/geral_asdesaber_pt1/EWTN_fTIa4NJnAG3rG7USs0BUOQs8gYtP2Sa2gLljKpcAw?e=uWxzNM",
+        "pdfLong": ""
+      },
+      {
+        "icon": "icon_course_g.svg",
+        "title": "GEOGRAFIA 11ºANO-presencial",
+        "hasAnualCourse": false,
+        "pdfShort": "",
+        "pdfLong": ""
+      },
+      {
+        "icon": "icon_course_pt.svg",
+        "title": "PORTUGUÊS 12ºANO-presencial",
+        "hasAnualCourse": true,
+        "pdfAnual": "",
+        "pdfShort": "",
+        "pdfLong": ""
+      },
+      {
+        "icon": "icon_course_m.svg",
+        "title": "MATEMÁTICA 12ºANO-presencial",
+        "hasAnualCourse": true,
+        "pdfAnual": "",
+        "pdfShort": "https://asdesaberpt-my.sharepoint.com/:b:/g/personal/geral_asdesaber_pt1/ETYL83sxHuBOkNGQXjt1xCMB9I3J6cjeeaX5E_Mq0j2pIQ?e=8MQpgw",
+        "pdfLong": ""
+      }
+    ]
+  }
+}
