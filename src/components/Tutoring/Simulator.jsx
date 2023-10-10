@@ -65,7 +65,7 @@ const Simulator = () => {
   const [level, setLevel] = useState("");
   const [hours, setHours] = useState("");
   const [type, setType] = useState("");
-  const [mode, setMode] = useState("Individual");
+  const [mode, setMode] = useState("");
   const [price, setPrice] = useState(0);
 
   const calculatePrice = () => {
@@ -118,7 +118,6 @@ const Simulator = () => {
             defaultValue=""
             onChange={(event) => {
               setType(event.target.value);
-              setMode("Individual");
             }}
             sx={{ mt: 2 }}
           >
