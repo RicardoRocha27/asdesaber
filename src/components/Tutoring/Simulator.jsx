@@ -31,23 +31,30 @@ const PRICES = {
     [MODES[0]]: {
       [LEVELS[0]]: 23,
       [LEVELS[1]]: 23,
-      [LEVELS[2]]: 27,
-      [LEVELS[3]]: 30,
+      [LEVELS[2]]: 28,
+      [LEVELS[3]]: 28,
       [LEVELS[4]]: 40,
+    },
+    [MODES[1]]: {
+      [LEVELS[0]]: 17,
+      [LEVELS[1]]: 17,
+      [LEVELS[2]]: 23,
+      [LEVELS[3]]: 23,
+      [LEVELS[4]]: 35,
     },
   },
   [TYPES[1]]: {
     [MODES[0]]: {
-      [LEVELS[0]]: 24,
+      [LEVELS[0]]: 25,
       [LEVELS[1]]: 25,
-      [LEVELS[2]]: 29,
+      [LEVELS[2]]: 30,
       [LEVELS[3]]: 32,
       [LEVELS[4]]: 42,
     },
     [MODES[1]]: {
       [LEVELS[0]]: 18,
       [LEVELS[1]]: 18,
-      [LEVELS[2]]: 23,
+      [LEVELS[2]]: 24,
       [LEVELS[3]]: 25,
       [LEVELS[4]]: 36,
     },
@@ -121,23 +128,22 @@ const Simulator = () => {
               </MenuItem>
             ))}
           </TextField>
-          {type === "Presencial" ? (
-            <TextField
-              required
-              select
-              id="mode"
-              label="Tipo"
-              value={mode}
-              onChange={(event) => setMode(event.target.value)}
-              sx={{ mt: 2 }}
-            >
-              {MODES.map((md, id) => (
-                <MenuItem key={id} value={md}>
-                  {md}
-                </MenuItem>
-              ))}
-            </TextField>
-          ) : undefined}
+
+          <TextField
+            required
+            select
+            id="mode"
+            label="Tipo"
+            value={mode}
+            onChange={(event) => setMode(event.target.value)}
+            sx={{ mt: 2 }}
+          >
+            {MODES.map((md, id) => (
+              <MenuItem key={id} value={md}>
+                {md}
+              </MenuItem>
+            ))}
+          </TextField>
 
           <Button
             variant="contained"
