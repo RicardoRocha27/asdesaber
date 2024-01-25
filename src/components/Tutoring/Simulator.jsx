@@ -1,30 +1,30 @@
-import React, { useState } from "react";
-import Typography from "@mui/material/Typography";
-import { Box, Container, MenuItem, TextField, Button } from "@mui/material";
-import { Link } from "react-router-dom";
-import LinkWithScroll from "../LinkWithScroll";
-import SectionHeader from "../SectionHeader";
-import PricePDF from "../../assets/regulamento_23_24.pdf";
+import React, { useState } from 'react';
+import Typography from '@mui/material/Typography';
+import { Box, Container, MenuItem, TextField, Button } from '@mui/material';
+import { Link } from 'react-router-dom';
+import LinkWithScroll from '../LinkWithScroll';
+import SectionHeader from '../SectionHeader';
+import PricePDF from '../../assets/regulamento_23_24_sem_IVA.pdf';
 
 const LEVELS = [
-  "1º ao 8º ano",
-  "9º ano",
-  "Disciplina sem exame 10º e 11º ano",
-  "Disciplina com exame 11º e 12º ano",
-  "Superior",
+  '1º ao 8º ano',
+  '9º ano',
+  'Disciplina sem exame 10º e 11º ano',
+  'Disciplina com exame 11º e 12º ano',
+  'Superior',
 ];
 
 const WEEKLY_HOURS = [
-  [1, "1h"],
-  [1.5, "1h30"],
-  [2, "2h"],
-  [2.5, "2h30"],
-  [3, "3h"],
+  [1, '1h'],
+  [1.5, '1h30'],
+  [2, '2h'],
+  [2.5, '2h30'],
+  [3, '3h'],
 ];
 
-const TYPES = ["Online", "Presencial"];
+const TYPES = ['Online', 'Presencial'];
 
-const MODES = ["Individual", "Grupo"];
+const MODES = ['Individual', 'Grupo'];
 
 const PRICES = {
   [TYPES[0]]: {
@@ -62,10 +62,10 @@ const PRICES = {
 };
 
 const Simulator = () => {
-  const [level, setLevel] = useState("");
-  const [hours, setHours] = useState("");
-  const [type, setType] = useState("");
-  const [mode, setMode] = useState("");
+  const [level, setLevel] = useState('');
+  const [hours, setHours] = useState('');
+  const [type, setType] = useState('');
+  const [mode, setMode] = useState('');
   const [price, setPrice] = useState(0);
 
   const calculatePrice = () => {
@@ -148,7 +148,7 @@ const Simulator = () => {
             variant="contained"
             color="primary"
             sx={{ mt: 2 }}
-            disabled={type === "" || level === "" || hours === ""}
+            disabled={type === '' || level === '' || hours === ''}
             onClick={calculatePrice}
           >
             Calcular
@@ -182,7 +182,7 @@ const Simulator = () => {
           textAlign="center"
           fontSize="0.875rem"
         >
-          *Todos os preços indicados já incluem IVA à taxa de 23%.
+          *Todos os preços indicados estão isentos de IVA.
         </Typography>
         <Typography
           variant="body1"
@@ -194,18 +194,18 @@ const Simulator = () => {
           mensalidade de caução que abate na última mensalidade.
         </Typography>
         <Typography variant="body1" color="primary" textAlign="center">
-          *Caso permaneça com alguma questão consulte o{" "}
+          *Caso permaneça com alguma questão consulte o{' '}
           <Link
             to={PricePDF}
             target="_blank"
-            style={{ color: "#1893c6", fontWeight: 700 }}
+            style={{ color: '#1893c6', fontWeight: 700 }}
           >
             regulamento aqui
-          </Link>{" "}
-          ou{" "}
+          </Link>{' '}
+          ou{' '}
           <LinkWithScroll
             to="/contactos"
-            style={{ color: "#1893c6", fontWeight: 700 }}
+            style={{ color: '#1893c6', fontWeight: 700 }}
           >
             contacte-nos.
           </LinkWithScroll>
