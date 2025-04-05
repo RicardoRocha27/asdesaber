@@ -12,6 +12,9 @@
       {
         "icon": "icon_course_fq.svg",
         "title": "FISICA-QUÍMICA 11ºANO-ONLINE",
+        "subject": "FISICA-QUÍMICA",
+        "year": "11ºANO",
+        "mode": "ONLINE",
         "hasAnualCourse": false,
         "pdfShort": "https://drive.google.com/file/d/1OEaagkrHyTyyvHJstB-w7Cf2VgadqTsY/view?usp=sharing",
         "pdfLong": "https://drive.google.com/file/d/1sJWB2Hb9LFe2PLXvsY_fyR6gUp5KS1zs/view?usp=sharing"
@@ -19,6 +22,9 @@
       {
         "icon": "icon_course_bg.svg",
         "title": "BIOLOGIA-GEOLOGIA 11ºANO-ONLINE",
+        "subject": "BIOLOGIA-GEOLOGIA",
+        "year": "11ºANO",
+        "mode": "ONLINE",
         "hasAnualCourse": false,
         "pdfShort": "https://drive.google.com/file/d/1YnhsEiTbkTbPMY8ZhoXpd6K63cmCOohS/view?usp=sharing",
         "pdfLong": "https://drive.google.com/file/d/1PPNn-MFX0oHGi03_dQ_BDDMWwj52TbGR/view?usp=drive_link"
@@ -26,6 +32,9 @@
       {
         "icon": "icon_course_gd.svg",
         "title": "GEOMETRIA DESCRITIVA 11ºANO-ONLINE",
+        "subject": "GEOMETRIA DESCRITIVA",
+        "year": "11ºANO",
+        "mode": "ONLINE",
         "hasAnualCourse": false,
         "pdfShort": "",
         "pdfLong": ""
@@ -33,6 +42,9 @@
       {
         "icon": "icon_course_e.svg",
         "title": "ECONOMIA 11ºANO-ONLINE",
+        "subject": "ECONOMIA",
+        "year": "11ºANO",
+        "mode": "ONLINE",
         "hasAnualCourse": false,
         "pdfShort": "https://drive.google.com/file/d/1wIwOClnPJ7LfpdcItThGqnHmY4ar29S_/view?usp=drive_link",
         "pdfLong": "https://drive.google.com/file/d/1rsk9X8Powm10TuVpE8-g-8tclUqiKoJm/view?usp=sharing"
@@ -40,6 +52,9 @@
       {
         "icon": "icon_course_g_white.svg",
         "title": "GEOGRAFIA 11ºANO-ONLINE",
+        "subject": "GEOGRAFIA",
+        "year": "11ºANO",
+        "mode": "ONLINE",
         "hasAnualCourse": false,
         "pdfShort": "",
         "pdfLong": ""
@@ -47,6 +62,9 @@
       {
         "icon": "icon_course_pt_black.svg",
         "title": "PORTUGUÊS 12ºANO-ONLINE",
+        "subject": "PORTUGUÊS",
+        "year": "12ºANO",
+        "mode": "ONLINE",
         "hasAnualCourse": true,
         "pdfAnual": "",
         "pdfShort": "https://drive.google.com/file/d/1bzhezXMFlUXvRtt1x5wftIRo1hgcUhj0/view?usp=sharing",
@@ -55,6 +73,9 @@
       {
         "icon": "icon_course_m_white.svg",
         "title": "MATEMÁTICA 12ºANO-ONLINE",
+        "subject": "MATEMÁTICA",
+        "year": "12ºANO",
+        "mode": "ONLINE",
         "hasAnualCourse": true,
         "pdfAnual": "",
         "pdfShort": "https://drive.google.com/file/d/1IBo8Eo7yxTxAvHFnbB5qNJC93AA-YWaL/view?usp=sharing",
@@ -65,6 +86,9 @@
       {
         "icon": "icon_course_fq.svg",
         "title": "FISICA-QUÍMICA 11ºANO-presencial",
+        "subject": "FISICA-QUÍMICA",
+        "year": "11ºANO",
+        "mode": "PRESENCIAL",
         "hasAnualCourse": false,
         "pdfShort": "https://drive.google.com/file/d/1zJjnNOc_iGfDo5-gmqnWS1yjNNAkdElp/view?usp=sharing",
         "pdfLong": "https://drive.google.com/file/d/16Krb0iXxbJxv3AiSIbfkeriV-bjNjNXE/view?usp=sharing"
@@ -72,6 +96,9 @@
       {
         "icon": "icon_course_bg.svg",
         "title": "BIOLOGIA-GEOLOGIA 11ºANO-presencial",
+        "subject": "BIOLOGIA-GEOLOGIA",
+        "year": "11ºANO",
+        "mode": "PRESENCIAL",
         "hasAnualCourse": false,
         "pdfShort": "https://drive.google.com/file/d/1K_ZJaMi-lvnI1pbw6Efv5Q8TEN2UZhos/view?usp=sharing",
         "pdfLong": "https://drive.google.com/file/d/1s-P7KaD9xYfQQeU_ynO_y3pyOkOM6fot/view?usp=sharing"
@@ -79,6 +106,9 @@
       {
         "icon": "icon_course_gd.svg",
         "title": "GEOMETRIA DESCRITIVA 11ºANO-presencial",
+        "subject": "GEOMETRIA DESCRITIVA",
+        "year": "11ºANO",
+        "mode": "PRESENCIAL",
         "hasAnualCourse": false,
         "pdfShort": "https://drive.google.com/file/d/1DvmsLZts2uYcW9Z2BoiEQA4b0ykrGB4P/view?usp=sharing",
         "pdfLong": ""
@@ -86,6 +116,9 @@
       {
         "icon": "icon_course_g.svg",
         "title": "GEOGRAFIA 11ºANO-presencial",
+        "subject": "GEOGRAFIA",
+        "year": "11ºANO",
+        "mode": "PRESENCIAL",
         "hasAnualCourse": false,
         "pdfShort": "https://drive.google.com/file/d/13b0KpuhPsW-tSDxAAeGnE0CyUf_gdlfe/view?usp=sharing",
         "pdfLong": ""
@@ -93,6 +126,9 @@
       {
         "icon": "icon_course_pt.svg",
         "title": "PORTUGUÊS 12ºANO-presencial",
+        "subject": "PORTUGUÊS",
+        "year": "12ºANO",
+        "mode": "PRESENCIAL",
         "hasAnualCourse": true,
         "pdfAnual": "",
         "pdfShort": "https://drive.google.com/file/d/17QPFixqNNLm0-YK3ftfqJDnmyZ2fy34u/view?usp=drive_link",
@@ -101,6 +137,9 @@
       {
         "icon": "icon_course_m.svg",
         "title": "MATEMÁTICA 12ºANO-presencial",
+        "subject": "MATEMÁTICA",
+        "year": "12ºANO",
+        "mode": "PRESENCIAL",
         "hasAnualCourse": true,
         "pdfAnual": "",
         "pdfShort": "https://asdesaberpt-my.sharepoint.com/:b:/g/personal/geral_asdesaber_pt1/ETYL83sxHuBOkNGQXjt1xCMB9I3J6cjeeaX5E_Mq0j2pIQ?e=8MQpgw",

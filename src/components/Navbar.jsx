@@ -26,6 +26,17 @@ function Navbar() {
     setAnchorElNav(null);
   };
 
+  // Check if a nav link should be active based on the current URL
+  const isNavLinkActive = (isActive, pageName, href) => {
+    // Special case for Explicações - only highlight if it's an exact match
+    if (pageName === "Explicações") {
+      return isActive && window.location.pathname === href;
+    }
+
+    // Default behavior for other links
+    return isActive;
+  };
+
   return (
     <AppBar position="fixed" sx={{ backgroundColor: "common.white" }}>
       <Container maxWidth="xl">
@@ -72,7 +83,7 @@ function Navbar() {
                   style={{ color: "#080F25", textDecoration: "none" }}
                 >
                   {({ isActive }) =>
-                    isActive ? (
+                    isNavLinkActive(isActive, page.name, page.href) ? (
                       <MenuItem key={page.name} onClick={handleCloseNavMenu}>
                         <Typography
                           textAlign="center"
@@ -121,7 +132,7 @@ function Navbar() {
                 style={{ my: 2, display: "block", textDecoration: "none" }}
               >
                 {({ isActive }) =>
-                  isActive ? (
+                  isNavLinkActive(isActive, page.name, page.href) ? (
                     <Button
                       sx={{
                         color: "primary",

@@ -1,194 +1,244 @@
-import { Box, Button, Container, Grid, Typography } from "@mui/material";
+import {
+  Box,
+  Button,
+  Container,
+  Grid,
+  Typography,
+  Card,
+  CardContent,
+  CardMedia,
+  CardActions,
+  Paper,
+  Divider,
+  Chip,
+} from "@mui/material";
 import React from "react";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
 
 const Courses = ({ title, subtitle, courses }) => {
   const openFile = (pdf) => {
     window.open(pdf, "_blank");
   };
+
+  const hasPdfs = (course) => {
+    return (
+      (course.hasAnualCourse && course.pdfAnual !== "") ||
+      course.pdfLong !== "" ||
+      course.pdfShort !== ""
+    );
+  };
+
   return (
-    <>
-      <Box my={10}>
-        <Typography variant="h6" color="textSecondary" textAlign="center">
-          {title}
-        </Typography>
-        <Typography
-          variant="h5"
-          textAlign="center"
-          sx={{
-            "&::after": {
-              content: "''",
-              display: "block",
+    <Box component="section" sx={{ py: 8, px: 2 }}>
+      <Container maxWidth="lg">
+        <Box mb={6} textAlign="center">
+          <Typography variant="h6" color="textSecondary" gutterBottom>
+            {title}
+          </Typography>
+          <Typography
+            variant="h4"
+            component="h2"
+            fontWeight="bold"
+            sx={{
               position: "relative",
-              bottom: "-10px",
-              width: "10%",
-              height: "3px",
-              backgroundColor: "#fe860c",
-              borderRadius: "5em",
-              left: "50%",
-              transform: "translateX(-50%)",
-            },
-          }}
-        >
-          {subtitle}
-        </Typography>
-      </Box>
-      {courses.map((course, index) => {
-        return (
-          <Box
-            key={index}
-            backgroundColor={index % 2 !== 0 ? "#f5f5f5" : "#1893c6"}
-            py={5}
+              display: "inline-block",
+              pb: 2,
+              "&::after": {
+                content: "''",
+                position: "absolute",
+                bottom: 0,
+                left: "50%",
+                transform: "translateX(-50%)",
+                width: "80px",
+                height: "4px",
+                backgroundColor: "#fe860c",
+                borderRadius: "2px",
+              },
+            }}
           >
-            <Container maxWidth="md">
-              <Grid
-                container
-                display="flex"
-                spacing={{ xs: 3, md: 0 }}
-                justifyContent="center"
+            {subtitle}
+          </Typography>
+        </Box>
+
+        <Grid container spacing={4}>
+          {courses.map((course, index) => (
+            <Grid item xs={12} sm={6} md={4} key={index}>
+              <Card
+                elevation={3}
+                sx={{
+                  height: "100%",
+                  display: "flex",
+                  flexDirection: "column",
+                  transition: "transform 0.2s, box-shadow 0.2s",
+                  "&:hover": {
+                    transform: "translateY(-8px)",
+                    boxShadow: "0 12px 20px rgba(0, 0, 0, 0.1)",
+                  },
+                }}
               >
-                <Grid
-                  item
-                  display="flex"
-                  alignItems="center"
-                  justifyContent="center"
-                  xs={12}
-                  md={2}
+                <Box
+                  sx={{
+                    backgroundColor: "#1893c6",
+                    py: 3,
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    position: "relative",
+                  }}
                 >
                   <img
                     src={require(`../assets/${course.icon}`)}
-                    alt={course.title}
+                    alt={course.subject}
                     height="80px"
                     width="80px"
+                    style={{
+                      filter: "brightness(0) invert(1)",
+                    }}
                   />
-                </Grid>
-                <Grid
-                  item
-                  display="flex"
-                  flexDirection="column"
-                  justifyContent="center"
-                  alignItems={{ xs: "center", md: "flex-start" }}
-                  xs={12}
-                  md={5}
-                >
+                  <Chip
+                    label={course.mode}
+                    size="small"
+                    sx={{
+                      position: "absolute",
+                      top: 12,
+                      right: 12,
+                      backgroundColor: "#ff9800", // Muted orange color
+                      color: "white",
+                      fontWeight: "bold",
+                      fontSize: "0.7rem",
+                    }}
+                  />
+                </Box>
+
+                <CardContent sx={{ flexGrow: 1, pt: 3 }}>
                   <Typography
                     variant="h6"
-                    color="textSecondary"
-                    mb={1}
-                    sx={{
-                      textShadow:
-                        index % 2 === 0 ? "0px 0px 2px #3D3C3C" : undefined,
-                    }}
-                    textAlign={{ xs: "center", md: "left" }}
+                    component="h3"
+                    gutterBottom
+                    fontWeight="medium"
+                    textAlign="center"
                   >
-                    {course.title}
+                    {course.subject}
                   </Typography>
-                  {course.hasAnualCourse && course.pdfAnual !== "" ? (
-                    <Button
-                      onClick={() => openFile(course.pdfAnual)}
-                      sx={{
-                        textDecoration: "none",
-                        display: "flex",
-                        marginBottom: "10px",
-                        p: 0,
-                      }}
-                      target={course.pdfAnual === "" ? "" : "_blank"}
-                    >
-                      <Typography
-                        variant="body1"
-                        color={
-                          index % 2 !== 0 ? "common.black" : "common.white"
-                        }
-                        sx={{
-                          "&:hover": {
-                            color: index % 2 !== 0 ? "#1893c6" : "common.black",
-                          },
-                        }}
-                      >
-                        Curso Anual
-                      </Typography>
-                      <ArrowForwardIcon
-                        color={index % 2 === 0 ? "info" : "success"}
-                        sx={{
-                          "&:hover": {
-                            color: index % 2 !== 0 ? "#1893c6" : "common.black",
-                          },
-                        }}
-                      />
-                    </Button>
-                  ) : undefined}
-                  {course.pdfLong !== "" && (
-                    <Button
-                      onClick={() => openFile(course.pdfLong)}
-                      sx={{
-                        textDecoration: "none",
-                        display: "flex",
-                        marginBottom: "10px",
-                        padding: 0,
-                      }}
-                      target={course.pdfLong === "" ? "" : "_blank"}
-                    >
-                      <Typography
-                        variant="body1"
-                        color={
-                          index % 2 !== 0 ? "common.black" : "common.white"
-                        }
-                        sx={{
-                          "&:hover": {
-                            color: index % 2 !== 0 ? "#1893c6" : "common.black",
-                          },
-                        }}
-                      >
-                        Curso Intensivo - Longa Duração
-                      </Typography>
-                      <ArrowForwardIcon
-                        color={index % 2 === 0 ? "info" : "success"}
-                        sx={{
-                          "&:hover": {
-                            color: index % 2 !== 0 ? "#1893c6" : "common.black",
-                          },
-                        }}
-                      />
-                    </Button>
-                  )}
 
-                  <Button
-                    onClick={() => openFile(course.pdfShort)}
-                    style={{
-                      textDecoration: "none",
-                    }}
-                    sx={{
-                      padding: 0,
-                    }}
-                    target={course.pdfShort === "" ? "" : "_blank"}
+                  <Typography
+                    variant="subtitle1"
+                    color="text.secondary"
+                    textAlign="center"
+                    gutterBottom
                   >
-                    <Typography
-                      variant="body1"
-                      color={index % 2 !== 0 ? "common.black" : "common.white"}
-                      sx={{
-                        "&:hover": {
-                          color: index % 2 !== 0 ? "#1893c6" : "common.black",
-                        },
-                      }}
-                    >
-                      Curso Intensivo - Curta Duração
-                    </Typography>
-                    <ArrowForwardIcon
-                      color={index % 2 === 0 ? "info" : "success"}
-                      sx={{
-                        "&:hover": {
-                          color: index % 2 !== 0 ? "#1893c6" : "common.black",
-                        },
-                      }}
-                    />
-                  </Button>
-                </Grid>
-              </Grid>
-            </Container>
-          </Box>
-        );
-      })}
-    </>
+                    {course.year}
+                  </Typography>
+
+                  <Divider sx={{ my: 2 }} />
+
+                  <Box sx={{ pt: 1 }}>
+                    {hasPdfs(course) ? (
+                      <>
+                        {course.hasAnualCourse && course.pdfAnual !== "" && (
+                          <Button
+                            onClick={() => openFile(course.pdfAnual)}
+                            fullWidth
+                            sx={{
+                              justifyContent: "space-between",
+                              textAlign: "left",
+                              py: 1,
+                              px: 2,
+                              mb: 1,
+                              borderRadius: "8px",
+                              backgroundColor: "rgba(24, 147, 198, 0.08)",
+                              "&:hover": {
+                                backgroundColor: "rgba(24, 147, 198, 0.15)",
+                              },
+                            }}
+                          >
+                            <Typography variant="body2" fontWeight="medium">
+                              Curso Anual
+                            </Typography>
+                            <ArrowForwardIcon fontSize="small" />
+                          </Button>
+                        )}
+
+                        {course.pdfLong !== "" && (
+                          <Button
+                            onClick={() => openFile(course.pdfLong)}
+                            fullWidth
+                            sx={{
+                              justifyContent: "space-between",
+                              textAlign: "left",
+                              py: 1,
+                              px: 2,
+                              mb: 1,
+                              borderRadius: "8px",
+                              backgroundColor: "rgba(24, 147, 198, 0.08)",
+                              "&:hover": {
+                                backgroundColor: "rgba(24, 147, 198, 0.15)",
+                              },
+                            }}
+                          >
+                            <Typography variant="body2" fontWeight="medium">
+                              Curso Intensivo - Longa Duração
+                            </Typography>
+                            <ArrowForwardIcon fontSize="small" />
+                          </Button>
+                        )}
+
+                        {course.pdfShort !== "" && (
+                          <Button
+                            onClick={() => openFile(course.pdfShort)}
+                            fullWidth
+                            sx={{
+                              justifyContent: "space-between",
+                              textAlign: "left",
+                              py: 1,
+                              px: 2,
+                              borderRadius: "8px",
+                              backgroundColor: "rgba(24, 147, 198, 0.08)",
+                              "&:hover": {
+                                backgroundColor: "rgba(24, 147, 198, 0.15)",
+                              },
+                            }}
+                          >
+                            <Typography variant="body2" fontWeight="medium">
+                              Curso Intensivo - Curta Duração
+                            </Typography>
+                            <ArrowForwardIcon fontSize="small" />
+                          </Button>
+                        )}
+                      </>
+                    ) : (
+                      <Box
+                        sx={{
+                          display: "flex",
+                          alignItems: "center",
+                          justifyContent: "center",
+                          backgroundColor: "rgba(0, 0, 0, 0.03)",
+                          borderRadius: "8px",
+                          py: 1.5,
+                          px: 2,
+                        }}
+                      >
+                        <InfoOutlinedIcon
+                          sx={{
+                            fontSize: 16,
+                            color: "text.secondary",
+                            mr: 1,
+                          }}
+                        />
+                        <Typography variant="body2" color="text.secondary">
+                          Materiais disponíveis em breve
+                        </Typography>
+                      </Box>
+                    )}
+                  </Box>
+                </CardContent>
+              </Card>
+            </Grid>
+          ))}
+        </Grid>
+      </Container>
+    </Box>
   );
 };
 

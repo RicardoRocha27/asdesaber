@@ -9,6 +9,10 @@
       "href": "/explicacoes"
     },
     {
+      "name": "Exames",
+      "href": "/explicacoes/cursos"
+    },
+    {
       "name": "Apoio Psicopedagógico",
       "href": "/apoio"
     },
