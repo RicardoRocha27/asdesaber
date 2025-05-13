@@ -17,7 +17,7 @@ const Courses = () => {
       />
       <CoursesAreas
         title="Cursos online"
-        subtitle="Inscricões Abertas"
+        subtitle="Inscricões a partir de janeiro"
         courses={Data.Courses.online}
       />
       <CoursesAreas

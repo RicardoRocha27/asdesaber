@@ -15,9 +15,12 @@
         "subject": "FISICA-QUÍMICA",
         "year": "11ºANO",
         "mode": "ONLINE",
-        "hasAnualCourse": false,
-        "pdfShort": "https://drive.google.com/file/d/1OEaagkrHyTyyvHJstB-w7Cf2VgadqTsY/view?usp=sharing",
-        "pdfLong": "https://drive.google.com/file/d/1yVuBjMcwkn-fiiafbXBrQwZ4dLnDsL7s/view?usp=sharing"
+        "courseOptions": [
+          {
+            "name": "Curso Intensivo - Turno 1",
+            "pdf": "https://drive.google.com/file/d/1K9C6ARbynN4FzeyMQky8coPUa3zgyGBy/view?usp=sharing"
+          }
+        ]
       },
       {
         "icon": "icon_course_bg.svg",
@@ -25,9 +28,16 @@
         "subject": "BIOLOGIA-GEOLOGIA",
         "year": "11ºANO",
         "mode": "ONLINE",
-        "hasAnualCourse": false,
-        "pdfShort": "https://drive.google.com/file/d/1skedIUlBNxlivu1LM4OIVLsHJDK8Y2tZ/view?usp=sharing",
-        "pdfLong": "https://drive.google.com/file/d/1PPNn-MFX0oHGi03_dQ_BDDMWwj52TbGR/view?usp=drive_link"
+        "courseOptions": [
+          {
+            "name": "Curso Intensivo - Turno 1",
+            "pdf": "https://drive.google.com/file/d/1ZTpHd6DLbotYYx5Xt9UeC4W21cMsDT4n/view?usp=sharing"
+          },
+          {
+            "name": "Curso Intensivo - Turno 2",
+            "pdf": "https://drive.google.com/file/d/1jUI0sd98MsIe_kiTddc5Kgm8nW3gy4c5/view?usp=sharing"
+          }
+        ]
       },
       {
         "icon": "icon_course_gd.svg",
@@ -35,9 +45,7 @@
         "subject": "GEOMETRIA DESCRITIVA",
         "year": "11ºANO",
         "mode": "ONLINE",
-        "hasAnualCourse": false,
-        "pdfShort": "",
-        "pdfLong": ""
+        "courseOptions": []
       },
       {
         "icon": "icon_course_e.svg",
@@ -45,9 +53,12 @@
         "subject": "ECONOMIA",
         "year": "11ºANO",
         "mode": "ONLINE",
-        "hasAnualCourse": false,
-        "pdfShort": "https://drive.google.com/file/d/1e2RNb5RgYthX_IITDW1R8_lDuQWq-p24/view?usp=sharing",
-        "pdfLong": "https://drive.google.com/file/d/1rsk9X8Powm10TuVpE8-g-8tclUqiKoJm/view?usp=sharing"
+        "courseOptions": [
+          {
+            "name": "Curso Intensivo - Turno 1",
+            "pdf": "https://drive.google.com/file/d/179sLkpPcSqWTissBREUrEkCVezXAEqZV/view?usp=sharing"
+          }
+        ]
       },
       {
         "icon": "icon_course_g_white.svg",
@@ -55,9 +66,12 @@
         "subject": "GEOGRAFIA",
         "year": "11ºANO",
         "mode": "ONLINE",
-        "hasAnualCourse": false,
-        "pdfShort": "https://drive.google.com/file/d/1FrTxDU5tndrPMeRAf2kd6fHBoiBao-fn/view?usp=sharing",
-        "pdfLong": ""
+        "courseOptions": [
+          {
+            "name": "Curso Intensivo - Turno 1",
+            "pdf": "https://drive.google.com/file/d/1UEu9yUOmkWra1O04pt3BfE1nZCcjiUET/view?usp=sharing"
+          }
+        ]
       },
       {
         "icon": "icon_course_pt_black.svg",
@@ -65,10 +79,12 @@
         "subject": "PORTUGUÊS",
         "year": "12ºANO",
         "mode": "ONLINE",
-        "hasAnualCourse": true,
-        "pdfAnual": "",
-        "pdfShort": "https://drive.google.com/file/d/1PM8ziMXf0G1wsFsQHQjW1ie7XVcS8c7G/view?usp=sharing",
-        "pdfLong": ""
+        "courseOptions": [
+          {
+            "name": "Curso Intensivo - Turno 1",
+            "pdf": "https://drive.google.com/file/d/1CmTb6rHeQUagap1A2aWooJk7gNPIH-gH/view?usp=sharing"
+          }
+        ]
       },
       {
         "icon": "icon_course_m_white.svg",
@@ -76,10 +92,25 @@
         "subject": "MATEMÁTICA",
         "year": "12ºANO",
         "mode": "ONLINE",
-        "hasAnualCourse": true,
-        "pdfAnual": "",
-        "pdfShort": "https://drive.google.com/file/d/1UPK63E08BPpMJPQljSktjqcD3X_g__JJ/view?usp=sharing",
-        "pdfLong": "https://drive.google.com/file/d/1ksaAmMHCoSlvyONilMf2hR7Ty3YuVe_p/view?usp=sharing"
+        "courseOptions": [
+          {
+            "name": "Curso Intensivo - Turno 1",
+            "pdf": "https://drive.google.com/file/d/1FEHuTd1tm0kRXR8sVfD0dJbgZPJBkwlj/view?usp=sharing"
+          }
+        ]
+      },
+      {
+        "icon": "icon_course_m_white.svg",
+        "title": "MACS 12ºANO-ONLINE",
+        "subject": "MACS",
+        "year": "12ºANO",
+        "mode": "ONLINE",
+        "courseOptions": [
+          {
+            "name": "Curso Intensivo - Turno 1",
+            "pdf": "https://drive.google.com/file/d/10n7GehwTl_ZJY4FBprZ_a7Odm11Wpz_5/view?usp=sharing"
+          }
+        ]
       }
     ],
     "inPerson": [
@@ -89,9 +120,20 @@
         "subject": "FISICA-QUÍMICA",
         "year": "11ºANO",
         "mode": "PRESENCIAL",
-        "hasAnualCourse": false,
-        "pdfShort": "https://drive.google.com/file/d/1zJjnNOc_iGfDo5-gmqnWS1yjNNAkdElp/view?usp=sharing",
-        "pdfLong": "https://drive.google.com/file/d/16Krb0iXxbJxv3AiSIbfkeriV-bjNjNXE/view?usp=sharing"
+        "courseOptions": [
+          {
+            "name": "Curso Intensivo - Turno 1",
+            "pdf": "https://drive.google.com/file/d/1hd4rWQj37S9KPi80g2V1omjV_n9a36AT/view?usp=sharing"
+          },
+          {
+            "name": "Curso Intensivo - Turno 2",
+            "pdf": "https://drive.google.com/file/d/1jsIRP-GV7W_3L55n1a35l55XrVRdHgOV/view?usp=sharing"
+          },
+          {
+            "name": "Curso Intensivo - Turno 3",
+            "pdf": "https://drive.google.com/file/d/1vjHqAzTYPPA-JVBlMbxEaWtMzDxLW0N_/view?usp=sharing"
+          }
+        ]
       },
       {
         "icon": "icon_course_bg.svg",
@@ -99,9 +141,16 @@
         "subject": "BIOLOGIA-GEOLOGIA",
         "year": "11ºANO",
         "mode": "PRESENCIAL",
-        "hasAnualCourse": false,
-        "pdfShort": "https://drive.google.com/file/d/1K_ZJaMi-lvnI1pbw6Efv5Q8TEN2UZhos/view?usp=sharing",
-        "pdfLong": "https://drive.google.com/file/d/1s-P7KaD9xYfQQeU_ynO_y3pyOkOM6fot/view?usp=sharing"
+        "courseOptions": [
+          {
+            "name": "Curso Intensivo - Turno 1",
+            "pdf": "https://drive.google.com/file/d/1-zK7Hton37D--WUEtbYySi38fIH_9yHC/view?usp=sharing"
+          },
+          {
+            "name": "Curso Intensivo - Turno 2",
+            "pdf": "https://drive.google.com/file/d/1y2ZOXOs8ZqWxj0SL9Qcb4Eum2X4v1Fee/view?usp=sharing"
+          }
+        ]
       },
       {
         "icon": "icon_course_gd.svg",
@@ -109,9 +158,12 @@
         "subject": "GEOMETRIA DESCRITIVA",
         "year": "11ºANO",
         "mode": "PRESENCIAL",
-        "hasAnualCourse": false,
-        "pdfShort": "https://drive.google.com/file/d/1DvmsLZts2uYcW9Z2BoiEQA4b0ykrGB4P/view?usp=sharing",
-        "pdfLong": ""
+        "courseOptions": [
+          {
+            "name": "Curso Intensivo - Turno 1",
+            "pdf": "https://drive.google.com/file/d/1ztLXHi2AL_lTkbPhKtvmfeSin4KI8xi_/view?usp=sharing"
+          }
+        ]
       },
       {
         "icon": "icon_course_g.svg",
@@ -119,9 +171,25 @@
         "subject": "GEOGRAFIA",
         "year": "11ºANO",
         "mode": "PRESENCIAL",
-        "hasAnualCourse": false,
-        "pdfShort": "https://drive.google.com/file/d/13b0KpuhPsW-tSDxAAeGnE0CyUf_gdlfe/view?usp=sharing",
-        "pdfLong": ""
+        "courseOptions": [
+          {
+            "name": "Curso Intensivo - Turno 1",
+            "pdf": "https://drive.google.com/file/d/13oMKvlAxNZam_BAX05Y8jiiYMpBScMaF/view?usp=sharing"
+          }
+        ]
+      },
+      {
+        "icon": "icon_course_pt.svg",
+        "title": "FILOSOFIA 11ºANO-presencial",
+        "subject": "FILOSOFIA",
+        "year": "11ºANO",
+        "mode": "PRESENCIAL",
+        "courseOptions": [
+          {
+            "name": "Curso Intensivo - Turno 1",
+            "pdf": "https://drive.google.com/file/d/1fZYYrcdfVN989xXsrTrFjBs-Try7Dn6H/view?usp=sharing"
+          }
+        ]
       },
       {
         "icon": "icon_course_pt.svg",
@@ -129,10 +197,33 @@
         "subject": "PORTUGUÊS",
         "year": "12ºANO",
         "mode": "PRESENCIAL",
-        "hasAnualCourse": true,
-        "pdfAnual": "",
-        "pdfShort": "https://drive.google.com/file/d/17QPFixqNNLm0-YK3ftfqJDnmyZ2fy34u/view?usp=drive_link",
-        "pdfLong": ""
+        "courseOptions": [
+          {
+            "name": "Curso Intensivo - Turno 1",
+            "pdf": "https://drive.google.com/file/d/1mX2gu-C0XBrUnPuzJe5Zwb-Xs669cB84/view?usp=sharing"
+          },
+          {
+            "name": "Curso Intensivo - Turno 2",
+            "pdf": "https://drive.google.com/file/d/16BRiCoJFAn38STMC_nhRDKXRFA_vVR_h/view?usp=sharing"
+          },
+          {
+            "name": "Curso Intensivo - Turno 3",
+            "pdf": "https://drive.google.com/file/d/1jIg9U-PLlRYKWGxm7p5_ML_bFtnlTEGv/view?usp=sharing"
+          }
+        ]
+      },
+      {
+        "icon": "icon_course_pt.svg",
+        "title": "PORTUGUÊS 9ºANO-presencial",
+        "subject": "PORTUGUÊS",
+        "year": "9ºANO",
+        "mode": "PRESENCIAL",
+        "courseOptions": [
+          {
+            "name": "Curso Intensivo - Turno 1",
+            "pdf": "https://drive.google.com/file/d/1Hyuk-1JWpozz8XWntuvtV-Y-vY1RaFdD/view?usp=sharing"
+          }
+        ]
       },
       {
         "icon": "icon_course_m.svg",
@@ -140,10 +231,51 @@
         "subject": "MATEMÁTICA",
         "year": "12ºANO",
         "mode": "PRESENCIAL",
-        "hasAnualCourse": true,
-        "pdfAnual": "",
-        "pdfShort": "https://asdesaberpt-my.sharepoint.com/:b:/g/personal/geral_asdesaber_pt1/ETYL83sxHuBOkNGQXjt1xCMB9I3J6cjeeaX5E_Mq0j2pIQ?e=8MQpgw",
-        "pdfLong": ""
+        "courseOptions": [
+          {
+            "name": "Curso Intensivo - Turno 1",
+            "pdf": "https://drive.google.com/file/d/1_KvukEwRzCI364WJjgykQPhoUiuisiJd/view?usp=sharing"
+          }
+        ]
+      },
+      {
+        "icon": "icon_course_m.svg",
+        "title": "MATEMÁTICA B 11ºANO-presencial",
+        "subject": "MATEMÁTICA B",
+        "year": "11ºANO",
+        "mode": "PRESENCIAL",
+        "courseOptions": [
+          {
+            "name": "Curso Intensivo - Turno 1",
+            "pdf": "https://drive.google.com/file/d/1yOzsrO-UHK1kwUU_DdoDaZWB2SIQeY6e/view?usp=sharing"
+          }
+        ]
+      },
+      {
+        "icon": "icon_course_m.svg",
+        "title": "MACS 12ºANO-presencial",
+        "subject": "MACS",
+        "year": "12ºANO",
+        "mode": "PRESENCIAL",
+        "courseOptions": [
+          {
+            "name": "Curso Intensivo - Turno 1",
+            "pdf": "https://drive.google.com/file/d/1VoB08QuepNBNFx2AVtKPpF7NiyPGkaQE/view?usp=sharing"
+          }
+        ]
+      },
+      {
+        "icon": "icon_course_m.svg",
+        "title": "MATEMÁTICA 9ºANO-presencial",
+        "subject": "MATEMÁTICA",
+        "year": "9ºANO",
+        "mode": "PRESENCIAL",
+        "courseOptions": [
+          {
+            "name": "Curso Intensivo - Turno 1",
+            "pdf": "https://drive.google.com/file/d/1UyhjQf1OVrpFAcFBy3SLpdWjldZKVsl3/view?usp=sharing"
+          }
+        ]
       }
     ]
   }

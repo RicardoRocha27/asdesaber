@@ -6,9 +6,6 @@ import {
   Typography,
   Card,
   CardContent,
-  CardMedia,
-  CardActions,
-  Paper,
   Divider,
   Chip,
 } from "@mui/material";
@@ -19,14 +16,6 @@ import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
 const Courses = ({ title, subtitle, courses }) => {
   const openFile = (pdf) => {
     window.open(pdf, "_blank");
-  };
-
-  const hasPdfs = (course) => {
-    return (
-      (course.hasAnualCourse && course.pdfAnual !== "") ||
-      course.pdfLong !== "" ||
-      course.pdfShort !== ""
-    );
   };
 
   return (
@@ -134,79 +123,36 @@ const Courses = ({ title, subtitle, courses }) => {
                   <Divider sx={{ my: 2 }} />
 
                   <Box sx={{ pt: 1 }}>
-                    {hasPdfs(course) ? (
-                      <>
-                        {course.hasAnualCourse && course.pdfAnual !== "" && (
-                          <Button
-                            onClick={() => openFile(course.pdfAnual)}
-                            fullWidth
-                            sx={{
-                              justifyContent: "space-between",
-                              textAlign: "left",
-                              py: 1,
-                              px: 2,
-                              mb: 1,
-                              borderRadius: "8px",
-                              backgroundColor: "rgba(24, 147, 198, 0.08)",
-                              "&:hover": {
-                                backgroundColor: "rgba(24, 147, 198, 0.15)",
-                              },
-                            }}
-                          >
-                            <Typography variant="body2" fontWeight="medium">
-                              Curso Anual
-                            </Typography>
-                            <ArrowForwardIcon fontSize="small" />
-                          </Button>
-                        )}
-
-                        {course.pdfLong !== "" && (
-                          <Button
-                            onClick={() => openFile(course.pdfLong)}
-                            fullWidth
-                            sx={{
-                              justifyContent: "space-between",
-                              textAlign: "left",
-                              py: 1,
-                              px: 2,
-                              mb: 1,
-                              borderRadius: "8px",
-                              backgroundColor: "rgba(24, 147, 198, 0.08)",
-                              "&:hover": {
-                                backgroundColor: "rgba(24, 147, 198, 0.15)",
-                              },
-                            }}
-                          >
-                            <Typography variant="body2" fontWeight="medium">
-                              Curso Intensivo - Longa Duração
-                            </Typography>
-                            <ArrowForwardIcon fontSize="small" />
-                          </Button>
-                        )}
-
-                        {course.pdfShort !== "" && (
-                          <Button
-                            onClick={() => openFile(course.pdfShort)}
-                            fullWidth
-                            sx={{
-                              justifyContent: "space-between",
-                              textAlign: "left",
-                              py: 1,
-                              px: 2,
-                              borderRadius: "8px",
-                              backgroundColor: "rgba(24, 147, 198, 0.08)",
-                              "&:hover": {
-                                backgroundColor: "rgba(24, 147, 198, 0.15)",
-                              },
-                            }}
-                          >
-                            <Typography variant="body2" fontWeight="medium">
-                              Curso Intensivo - Curta Duração
-                            </Typography>
-                            <ArrowForwardIcon fontSize="small" />
-                          </Button>
-                        )}
-                      </>
+                    {course.courseOptions && course.courseOptions.length > 0 ? (
+                      course.courseOptions.map((option, optionIndex) => (
+                        <Button
+                          key={optionIndex}
+                          onClick={() => openFile(option.pdf)}
+                          fullWidth
+                          sx={{
+                            justifyContent: "space-between",
+                            textAlign: "left",
+                            py: 1,
+                            px: 2,
+                            mb: 1, // Add margin bottom for spacing between buttons
+                            borderRadius: "8px",
+                            backgroundColor: "rgba(24, 147, 198, 0.08)",
+                            "&:hover": {
+                              backgroundColor: "rgba(24, 147, 198, 0.15)",
+                            },
+                            // Remove margin bottom for the last button
+                            ...(optionIndex ===
+                              course.courseOptions.length - 1 && {
+                              mb: 0,
+                            }),
+                          }}
+                        >
+                          <Typography variant="body2" fontWeight="medium">
+                            {option.name}
+                          </Typography>
+                          <ArrowForwardIcon fontSize="small" />
+                        </Button>
+                      ))
                     ) : (
                       <Box
                         sx={{
@@ -227,7 +173,7 @@ const Courses = ({ title, subtitle, courses }) => {
                           }}
                         />
                         <Typography variant="body2" color="text.secondary">
-                          Materiais disponíveis em breve
+                          Cursos disponíveis em breve
                         </Typography>
                       </Box>
                     )}
