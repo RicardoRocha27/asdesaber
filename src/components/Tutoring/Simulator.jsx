@@ -1,71 +1,66 @@
-import React, { useState } from 'react';
-import Typography from '@mui/material/Typography';
-import { Box, Container, MenuItem, TextField, Button } from '@mui/material';
-import { Link } from 'react-router-dom';
-import LinkWithScroll from '../LinkWithScroll';
-import SectionHeader from '../SectionHeader';
-import PricePDF from '../../assets/regulamento_23_24_sem_IVA.pdf';
+import React, { useState } from "react";
+import Typography from "@mui/material/Typography";
+import { Box, Container, MenuItem, TextField, Button } from "@mui/material";
+import { Link } from "react-router-dom";
+import LinkWithScroll from "../LinkWithScroll";
+import SectionHeader from "../SectionHeader";
+import PricePDF from "../../assets/regulamento_24_25.pdf";
 
 const LEVELS = [
-  '1º ao 8º ano',
-  '9º ano',
-  'Disciplina sem exame 10º e 11º ano',
-  'Disciplina com exame 11º e 12º ano',
-  'Superior',
+  "1º ao 9º ano",
+  "Secundário - 10º, 11º e 12º ano",
+  "Superior",
+  "Aulas de língua estrangeira",
 ];
 
 const WEEKLY_HOURS = [
-  [1, '1h'],
-  [1.5, '1h30'],
-  [2, '2h'],
-  [2.5, '2h30'],
-  [3, '3h'],
+  [1, "1h"],
+  [1.5, "1h30"],
+  [2, "2h"],
+  [2.5, "2h30"],
+  [3, "3h"],
 ];
 
-const TYPES = ['Online', 'Presencial'];
+const TYPES = ["Online", "Presencial"];
 
-const MODES = ['Individual', 'Grupo'];
+const MODES = ["Individual", "Grupo"];
 
 const PRICES = {
   [TYPES[0]]: {
     [MODES[0]]: {
-      [LEVELS[0]]: 23,
-      [LEVELS[1]]: 23,
-      [LEVELS[2]]: 28,
-      [LEVELS[3]]: 28,
-      [LEVELS[4]]: 40,
+      [LEVELS[0]]: 19,
+      [LEVELS[1]]: 24,
+      [LEVELS[2]]: 35,
+      [LEVELS[3]]: 25,
     },
     [MODES[1]]: {
-      [LEVELS[0]]: 17,
-      [LEVELS[1]]: 17,
-      [LEVELS[2]]: 23,
-      [LEVELS[3]]: 23,
-      [LEVELS[4]]: 35,
+      [LEVELS[0]]: 14,
+      [LEVELS[1]]: 19,
+      [LEVELS[2]]: 29,
+      [LEVELS[3]]: 18,
     },
   },
   [TYPES[1]]: {
     [MODES[0]]: {
-      [LEVELS[0]]: 25,
-      [LEVELS[1]]: 25,
-      [LEVELS[2]]: 30,
-      [LEVELS[3]]: 32,
-      [LEVELS[4]]: 42,
+      [LEVELS[0]]: 24,
+      [LEVELS[1]]: 30,
+      [LEVELS[2]]: 38,
+      [LEVELS[3]]: 30,
     },
     [MODES[1]]: {
-      [LEVELS[0]]: 18,
-      [LEVELS[1]]: 18,
-      [LEVELS[2]]: 24,
-      [LEVELS[3]]: 25,
-      [LEVELS[4]]: 36,
+      [LEVELS[0]]: 16,
+      [LEVELS[1]]: 22,
+      [LEVELS[2]]: 32,
+      [LEVELS[3]]: 22,
     },
   },
 };
 
 const Simulator = () => {
-  const [level, setLevel] = useState('');
-  const [hours, setHours] = useState('');
-  const [type, setType] = useState('');
-  const [mode, setMode] = useState('');
+  const [level, setLevel] = useState("");
+  const [hours, setHours] = useState("");
+  const [type, setType] = useState("");
+  const [mode, setMode] = useState("");
   const [price, setPrice] = useState(0);
 
   const calculatePrice = () => {
@@ -148,7 +143,7 @@ const Simulator = () => {
             variant="contained"
             color="primary"
             sx={{ mt: 2 }}
-            disabled={type === '' || level === '' || hours === ''}
+            disabled={type === "" || level === "" || hours === ""}
             onClick={calculatePrice}
           >
             Calcular
@@ -194,18 +189,18 @@ const Simulator = () => {
           mensalidade de caução que abate na última mensalidade.
         </Typography>
         <Typography variant="body1" color="primary" textAlign="center">
-          *Caso permaneça com alguma questão consulte o{' '}
+          *Caso permaneça com alguma questão consulte o{" "}
           <Link
             to={PricePDF}
             target="_blank"
-            style={{ color: '#1893c6', fontWeight: 700 }}
+            style={{ color: "#1893c6", fontWeight: 700 }}
           >
             regulamento aqui
-          </Link>{' '}
-          ou{' '}
+          </Link>{" "}
+          ou{" "}
           <LinkWithScroll
             to="/contactos"
-            style={{ color: '#1893c6', fontWeight: 700 }}
+            style={{ color: "#1893c6", fontWeight: 700 }}
           >
             contacte-nos.
           </LinkWithScroll>
