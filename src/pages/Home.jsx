@@ -1,10 +1,10 @@
 import { Box } from "@mui/system";
-import React from "react";
+import React, { useState } from "react";
 import Hero from "../components/Hero";
 import Data from "../data/home/data.json";
 import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
-import { Card, CardContent, CardActionArea, Grid } from "@mui/material";
+import { Card, CardContent, CardActionArea, Grid, Snackbar, Alert } from "@mui/material";
 import LinkWithScroll from "../components/LinkWithScroll";
 import InfoSection from "../components/Home/InfoSection";
 import Testimonials from "../components/Home/Testimonials";
@@ -13,10 +13,59 @@ import Footer from "../components/Footer";
 import SendMessageImg from "../assets/send_message.png";
 import SectionHeader from "../components/SectionHeader";
 import PhraseBanner from "../components/PhraseBanner";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
+  const [open, setOpen] = useState(true);
+  const navigate = useNavigate();
+
+  const handleClose = (event, reason) => {
+    if (reason === "clickaway") {
+      return;
+    }
+    setOpen(false);
+  };
+
+  const handleBannerClick = () => {
+    navigate("/explicacoes/cursos");
+    window.scrollTo(0, 0);
+  };
+
   return (
     <>
+      <Snackbar
+        open={open}
+        autoHideDuration={null}
+        onClose={handleClose}
+        anchorOrigin={{ vertical: "top", horizontal: "center" }}
+        sx={{ mt: 10, zIndex: 9999 }}
+      >
+        <Alert
+          onClose={handleClose}
+          severity="info"
+          sx={{
+            width: "100%",
+            backgroundColor: "rgba(254, 134, 12, 0.75)",
+            color: "white",
+            fontWeight: "bold",
+            fontSize: "0.85rem",
+            "& .MuiAlert-icon": {
+              color: "white",
+            },
+            boxShadow: "0 4px 12px rgba(0,0,0,0.1)",
+            backdropFilter: "blur(4px)",
+          }}
+        >
+          <Box
+            component="span"
+            onClick={handleBannerClick}
+            sx={{ cursor: "pointer", display: "block", width: "100%" }}
+          >
+            Já começaram os primeiros cursos de preparação para os exames de 2026! Inscreva-se
+          </Box>
+        </Alert>
+      </Snackbar>
+
       {/* HERO SECTION */}
       <Hero
         title={Data.Hero.title}
@@ -118,7 +167,7 @@ const Home = () => {
                 height: "100%",
                 objectFit: "cover",
                 objectPosition: "center",
-              }}
+                }}
               src={SendMessageImg}
               alt="send message"
             />

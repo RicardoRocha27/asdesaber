@@ -16,14 +16,9 @@ const Courses = () => {
         href={Data.Hero.href}
       />
       <CoursesAreas
-        title="Cursos online"
-        subtitle="Inscricões a partir de janeiro"
-        courses={Data.Courses.online}
-      />
-      <CoursesAreas
-        title="Cursos presenciais"
-        subtitle="Inscricões a partir de maio"
-        courses={Data.Courses.inPerson}
+        title="Cursos disponíveis"
+        subtitle="Online e presenciais"
+        courses={Data.Courses.courses}
       />
       <Footer />
     </>
